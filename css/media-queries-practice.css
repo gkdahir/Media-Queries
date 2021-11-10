@@ -4,4 +4,61 @@ Styles for Media Queries Practice Exercise
 Author: Your Name Here 
 
 ----------------------------------------- */
-
+h1{background-attachment: hotpink; margin: auto;}
+#rows{
+    display: flex;
+    font-size: large;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    color: white;
+    margin: auto;
+}
+    .rowbox0 { width: 100%; background:#00e9e9;}
+    .rowbox1 { width: 31%; background:#1abc9c;}
+    .rowbox2 { width: 31%; background:#3498db;}
+    .rowbox3 { width: 31%; background:#9b59b6;}
+    .rowbox4 { width: 48.9%; background:#697a8b;}
+    .rowbox5 { width: 48.9%; background:#f1c40f;}
+    .rowbox6 { width: 23%; background:#e67e22;}
+    .rowbox7 { width: 23%; background:#e74c3c;}
+    .rowbox8 { width: 23%; background:#bdc3c7;}
+    .rowbox9 { width: 23%; background:#2ecc71;}
+  
+@media screen and (min-width: 641px) and (max-width: 1024px) {
+    #rows{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        font-size: medium;
+        color: grey;
+    }
+    .rowbox0 { width: 100%; background:#00e9e9;}
+    .rowbox1 { width: 48.9%; background:#1abc9c;}
+    .rowbox2 { width: 48.9%; background:#3498db;}
+    .rowbox3 { width: 48.9%; background:#9b59b6;}
+    .rowbox4 { width: 48.9%; background:#697a8b;}
+    .rowbox5 { width: 48.9%; background:#f1c40f;}
+    .rowbox6 { width: 48.9%; background:#e67e22;}
+    .rowbox7 { width: 23%; background:#e74c3c;}
+    .rowbox8 { width: 23%; background:#bdc3c7;}
+    .rowbox9 { width: 23%; background:#2ecc71;}
+}
+@media screen and (max-width: 640px) {
+  #rows{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      font-size: medium;
+      color: black;
+  }
+  .rowbox0 { width: 100%; background:#00e9e9;}
+  .rowbox1 { width: 48.9%; background:#1abc9c;}
+  .rowbox2 { width: 48.9%; background:#3498db;}
+  .rowbox3 { width: 100%; background:#9b59b6;}
+  .rowbox4 { width: 100%; background:#697a8b;}
+  .rowbox5 { width: 100%; background:#f1c40f;}
+  .rowbox6 { width: 100%; background:#e67e22;}
+  .rowbox7 { width: 100%; background:#e74c3c;}
+  .rowbox8 { width: 100%; background:#bdc3c7;}
+  .rowbox9 { width: 100%; background:#2ecc71;}
+}
